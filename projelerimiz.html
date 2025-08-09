@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>Projelerimiz - Gültekin Yapı İnşaat İnşaat Projeleri</title>
+    <meta name="description" content="Gültekin Yapı İnşaat'ın lüks villa, modern apartman ve ticari yapı projelerini keşfedin. Yüksek kalitede inşaat projelerimizle tanışın.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/serious.css">
+    <link rel="stylesheet" href="css/common-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), 
+                        url('front/static-images/front_pictures (5).jpg') !important;
+            background-position: center center !important;
+            background-size: cover !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Çerez Pop-up Modal -->
+    <div id="cookiePopup" class="cookie-popup" style="display: none;">
+        <div class="cookie-popup-content">
+            <div class="cookie-popup-header">
+                <h3><i class="fas fa-cookie-bite"></i> Çerez Kullanımı</h3>
+                <button class="cookie-popup-close" onclick="closeCookiePopup()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cookie-popup-body">
+                <p>
+                    Bu web sitesi, size en iyi deneyimi sunmak için çerezler kullanmaktadır. 
+                    Sitemizi kullanmaya devam ederek, çerez kullanımımızı kabul etmiş olursunuz.
+                </p>
+                <div class="cookie-options">
+                    <label class="cookie-option">
+                        <input type="checkbox" id="necessaryCookies" checked disabled>
+                        <span class="checkmark"></span>
+                        <span class="cookie-option-text">
+                            <strong>Zorunlu Çerezler</strong>
+                            <small>Web sitesinin çalışması için gerekli</small>
+                        </span>
+                    </label>
+                    <label class="cookie-option">
+                        <input type="checkbox" id="analyticsCookies">
+                        <span class="checkmark"></span>
+                        <span class="cookie-option-text">
+                            <strong>Analitik Çerezler</strong>
+                            <small>Site kullanımını analiz etmek için</small>
+                        </span>
+                    </label>
+                    <label class="cookie-option">
+                        <input type="checkbox" id="marketingCookies">
+                        <span class="checkmark"></span>
+                        <span class="cookie-option-text">
+                            <strong>Pazarlama Çerezleri</strong>
+                            <small>Kişiselleştirilmiş içerik için</small>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="cookie-popup-footer">
+                <button class="cookie-btn cookie-btn-secondary" onclick="rejectAllCookies()">
+                    Tümünü Reddet
+                </button>
+                <button class="cookie-btn cookie-btn-primary" onclick="acceptSelectedCookies()">
+                    Seçilenleri Kabul Et
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #1a1a1a; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: opacity 0.5s;">
+        <div style="width: 50px; height: 50px; border: 3px solid #56656E; border-top: 3px solid transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+    </div>
+    <nav class="luxury-navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="./">Gültekin Yapı İnşaat</a>
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Menüyü Aç/Kapat">
+                <span>☰</span>
+            </button>
+            <div class="navbar-menu" id="navbarMenu">
+                <a class="nav-link" href="./">Anasayfa</a>
+                <a class="nav-link" href="projelerimiz.html">Projelerimiz</a>
+                <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                <a class="nav-link" href="iletisim.html">İletişim</a>
+            </div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <p class="hero-subtitle fade-in">Portföyümüz</p>
+                <h1 class="about-hero-title fade-in oswald">Projelerimiz</h1>
+                <p class="hero-description fade-in">
+                    Yüksek kalitede inşaat projelerimizle hayalinizdeki yaşam alanlarını gerçeğe dönüştürüyoruz. 
+                    Her projemizde kalite ve zarafet bir arada.
+                </p>
+                <div class="hero-cta fade-in">
+                    <a href="#projects" class="btn-luxury">
+                        <i class="fas fa-building"></i>
+                        Projelerimizi İnceleyin
+                    </a>
+                    <a href="iletisim.html" class="btn-outline-luxury">
+                        <i class="fas fa-phone"></i>
+                        İletişime Geçin
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="luxury-section premium-projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <p class="section-subtitle fade-in">Portföyümüz</p>
+                    <h2 class="section-title fade-in oswald">Projelerimiz</h2>
+                </div>
+                <div class="premium-projects-grid">
+                    <div class="premium-project-card fade-in">
+                        <div class="premium-project-image">
+                            <img src="front/images/images (1).jpg" alt="Bage Konutları">
+                            <div class="premium-project-overlay">
+                            </div>
+                        </div>
+                        <div class="premium-project-content">
+                            <div class="premium-project-info">
+                                <h3 class="premium-project-title nevac">Gülten Konutları</h3>
+                                <p class="premium-project-desc">Modern mimarisi ve merkezi konumuyla öne çıkan Gülten Konutları, konforlu yaşam alanları sunuyor.</p>
+                                <div class="premium-project-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Antalya, Lara
+                                </div>
+                                <div class="premium-project-features">
+                                    <span class="feature-badge">3+1</span>
+                                    <span class="feature-badge">150m²</span>
+                                    <span class="feature-badge">Deniz Manzarası</span>
+                                </div>
+                            </div>
+                            <div class="premium-project-actions">
+                                <a href="luks-villa-lara.html" class="premium-project-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Proje Detayları
+                                </a>
+                                <a href="iletisim.html" class="premium-project-btn secondary">
+                                    <i class="fas fa-phone"></i>
+                                    İletişim
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="premium-project-card fade-in">
+                        <div class="premium-project-image">
+                            <img src="front/images/images (2).jpg" alt="Bakalim Rezidans">
+                            <div class="premium-project-overlay">
+                            </div>
+                        </div>
+                        <div class="premium-project-content">
+                            <div class="premium-project-info">
+                                <h3 class="premium-project-title nevac">Harika Rezidans</h3>
+                                <p class="premium-project-desc">Şehrin merkezinde, modern ve güvenli rezidans yaşamı. Sosyal tesisleri ve yeşil alanlarıyla öne çıkıyor.</p>
+                                <div class="premium-project-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Antalya, Konyaaltı
+                                </div>
+                                <div class="premium-project-features">
+                                    <span class="feature-badge">2+1</span>
+                                    <span class="feature-badge">120m²</span>
+                                    <span class="feature-badge">Sosyal Tesisler</span>
+                                </div>
+                            </div>
+                            <div class="premium-project-actions">
+                                <a href="rezidans-konyaalti.html" class="premium-project-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Proje Detayları
+                                </a>
+                                <a href="iletisim.html" class="premium-project-btn secondary">
+                                    <i class="fas fa-phone"></i>
+                                    İletişim
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="premium-project-card fade-in">
+                        <div class="premium-project-image">
+                            <img src="front/images/images (3).jpg" alt="Olartık Plaza">
+                            <div class="premium-project-overlay">
+                            </div>
+                        </div>
+                        <div class="premium-project-content">
+                            <div class="premium-project-info">
+                                <h3 class="premium-project-title nevac">Şahane Plaza</h3>
+                                <p class="premium-project-desc">İş dünyası için modern ve fonksiyonel ticari alanlar. Merkezi konumu ve ulaşım kolaylığıyla dikkat çekiyor.</p>
+                                <div class="premium-project-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Antalya, Muratpaşa
+                                </div>
+                                <div class="premium-project-features">
+                                    <span class="feature-badge">Ofis</span>
+                                    <span class="feature-badge">200m²</span>
+                                    <span class="feature-badge">Otopark</span>
+                                </div>
+                            </div>
+                            <div class="premium-project-actions">
+                                <a href="ticari-plaza-muratpasa.html" class="premium-project-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Proje Detayları
+                                </a>
+                                <a href="iletisim.html" class="premium-project-btn secondary">
+                                    <i class="fas fa-phone"></i>
+                                    İletişim
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="luxury-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-brand">Gültekin Yapı İnşaat</h3>
+                    <p class="footer-description">
+                        Yüksek kalitede inşaat hizmetleri sunan, güvenilir ve deneyimli yapı firması. 
+                        Hayalinizdeki yaşam alanlarını gerçeğe dönüştürüyoruz.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/gultekingrupinsaat13?igsh=MXdudnRzZjhvbmZpMg==" class="social-link" data-tooltip="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Hızlı Erişim</h4>
+                    <ul class="footer-links">
+                        <li><a href="./">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="projelerimiz.html">Projelerimiz</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">İletişim</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Beşminare Mah. 1320 Sk. Gül-Bal İş Merkezi Kapı No:13 Bitlis
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+905070097790">+90 (507) 009 77 90</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:gultekingrupyapi@gmail.com">gultekingrupyapi@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            Pzt-Cum 08:00 - 18:00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gültekin Yapı İnşaat. Tüm hakları saklıdır.</p>
+                <div class="footer-legal">
+                    <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>
+                    <a href="cerez-politikasi.html">Çerez Politikası</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

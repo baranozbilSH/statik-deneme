@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>Gültekin Yapı İnşaat - İnşaat ve Gayrimenkul Hizmetleri</title>
+    <meta name="description" content="Antalya'nın en prestijli inşaat firması. Lüks villa, modern apartman ve ticari yapı projelerimizle hayalinizdeki yaşam alanlarını inşa ediyoruz.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/serious.css">
+    <link rel="stylesheet" href="css/common-styles.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), 
+                        url('front/static-images/front_pictures (1).jpg') !important;
+            background-position: center center !important;
+            background-size: cover !important;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+</head>
+<body>
+    <!-- Çerez Pop-up Modal -->
+    <div id="cookiePopup" class="cookie-popup" style="display: none;">
+        <div class="cookie-popup-content">
+            <div class="cookie-popup-header">
+                <h3><i class="fas fa-cookie-bite"></i> Çerez Kullanımı</h3>
+                <button class="cookie-popup-close" onclick="closeCookiePopup()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cookie-popup-body">
+                <p>
+                    Bu web sitesi, size en iyi deneyimi sunmak için çerezler kullanmaktadır. 
+                    Sitemizi kullanmaya devam ederek, çerez kullanımımızı kabul etmiş olursunuz.
+                </p>
+                <div class="cookie-options">
+                    <label class="cookie-option">
+                        <input type="checkbox" id="necessaryCookies" checked disabled>
+                        <span class="checkmark"></span>
+                        <span class="cookie-option-text">
+                            <strong>Zorunlu Çerezler</strong>
+                            <small>Web sitesinin çalışması için gerekli</small>
+                        </span>
+                    </label>
+                    <label class="cookie-option">
+                        <input type="checkbox" id="analyticsCookies">
+                        <span class="checkmark"></span>
+                        <span class="cookie-option-text">
+                            <strong>Analitik Çerezler</strong>
+                            <small>Site kullanımını analiz etmek için</small>
+                        </span>
+                    </label>
+                    <label class="cookie-option">
+                        <input type="checkbox" id="marketingCookies">
+                        <span class="checkmark"></span>
+                        <span class="cookie-option-text">
+                            <strong>Pazarlama Çerezleri</strong>
+                            <small>Kişiselleştirilmiş içerik için</small>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="cookie-popup-footer">
+                <button class="cookie-btn cookie-btn-secondary" onclick="rejectAllCookies()">
+                    Tümünü Reddet
+                </button>
+                <button class="cookie-btn cookie-btn-primary" onclick="acceptSelectedCookies()">
+                    Seçilenleri Kabul Et
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #1a1a1a; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: opacity 0.5s;">
+        <div style="width: 50px; height: 50px; border: 3px solid #56656E; border-top: 3px solid transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg luxury-navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand oswald" href="./">Gültekin Yapı İnşaat</a>
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Menüyü Aç/Kapat">
+                <span>☰</span>
+            </button>
+            <div class="navbar-menu" id="navbarMenu">
+                <a class="nav-link" href="./">Anasayfa</a>
+                <a class="nav-link" href="projelerimiz.html">Projelerimiz</a>
+                <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                <a class="nav-link" href="iletisim.html">İletişim</a>
+            </div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <p class="hero-subtitle fade-in">İnşaat & Gayrimenkul</p>
+                <h1 class="about-hero-title fade-in oswald">Gültekin Yapı İnşaat</h1>
+                <p class="hero-description fade-in">
+                    Antalya'nın en prestijli inşaat firması olarak, lüks villa projelerinden modern apartman komplekslerine kadar hayalinizdeki yaşam alanlarını yüksek kalitede inşa ediyoruz. Her detayda mükemmellik arayışımızla geleceğin mimarisi bugünden şekilleniyor.
+                </p>
+                <div class="hero-cta fade-in">
+                    <a href="projelerimiz.html" class="btn-luxury">
+                        <i class="fas fa-building"></i>
+                        Projelerimizi Keşfedin
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="guncel-projeler-section premium-projeler-section">
+            <div class="premium-projeler-container">
+                <div class="section-header">
+                    <p class="section-subtitle fade-in">Portföyümüz</p>
+                    <h2 class="section-title fade-in oswald">Öne Çıkan Projeler</h2>
+                </div>
+                <div class="premium-projeler-slider" id="featuredProjectsSlider">
+                    <div class="premium-proje-slide active" data-slide="0">
+                        <div class="premium-proje-image">
+                            <img src="front/images/images (1).jpg" alt="Bage Konutları" />
+                        </div>
+                        <div class="premium-proje-info">
+                            <div class="premium-proje-title">Bage Konutları</div>
+                            <div class="premium-proje-desc">Modern mimarisi ve merkezi konumuyla öne çıkan Bage Konutları, konforlu yaşam alanları sunuyor.</div>
+                            <div class="premium-proje-location">Antalya, Lara</div>
+                            <a href="luks-villa-lara.html" class="premium-proje-btn">Proje Detayları <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="premium-proje-slide" data-slide="1">
+                        <div class="premium-proje-image">
+                            <img src="front/images/images (2).jpg" alt="Bakalim Rezidans" />
+                        </div>
+                        <div class="premium-proje-info">
+                            <div class="premium-proje-title">Bakalim Rezidans</div>
+                            <div class="premium-proje-desc">Şehrin merkezinde, modern ve güvenli rezidans yaşamı. Sosyal tesisleri ve yeşil alanlarıyla öne çıkıyor.</div>
+                            <div class="premium-proje-location">Antalya, Konyaaltı</div>
+                            <a href="rezidans-konyaalti.html" class="premium-proje-btn">Proje Detayları <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="premium-proje-slide" data-slide="2">
+                        <div class="premium-proje-image">
+                            <img src="front/images/images (3).jpg" alt="Olartık Plaza" />
+                        </div>
+                        <div class="premium-proje-info">
+                            <div class="premium-proje-title">Olartık Plaza</div>
+                            <div class="premium-proje-desc">İş dünyası için modern ve fonksiyonel ticari alanlar. Merkezi konumu ve ulaşım kolaylığıyla dikkat çekiyor.</div>
+                            <div class="premium-proje-location">Antalya, Muratpaşa</div>
+                            <a href="ticari-plaza-muratpasa.html" class="premium-proje-btn">Proje Detayları <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots" id="sliderDots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </section>
+        <section class="neden-gultekin-section">
+            <div class="neden-gultekin-container">
+                <div class="section-header">
+                    <p class="section-subtitle fade-in">Neden Biz?</p>
+                    <h2 class="section-title fade-in oswald">Gültekin Yapı'yı Tercih Etmeniz İçin 3 Neden</h2>
+                </div>
+                <div class="neden-gultekin-grid">
+                    <div class="neden-gultekin-item fade-in">
+                        <div class="neden-gultekin-icon"><i class="fas fa-gem"></i></div>
+                        <div class="neden-gultekin-title">Premium Kalite</div>
+                        <div class="neden-gultekin-desc">Tüm projelerimizde en kaliteli malzeme ve işçilikle, uzun ömürlü ve estetik yapılar inşa ediyoruz.</div>
+                    </div>
+                    <div class="neden-gultekin-item fade-in">
+                        <div class="neden-gultekin-icon"><i class="fas fa-users"></i></div>
+                        <div class="neden-gultekin-title">Deneyimli Kadro</div>
+                        <div class="neden-gultekin-desc">Alanında uzman mühendis ve mimarlarımızla, her projede maksimum müşteri memnuniyeti sağlıyoruz.</div>
+                    </div>
+                    <div class="neden-gultekin-item fade-in">
+                        <div class="neden-gultekin-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="neden-gultekin-title">Güven ve Şeffaflık</div>
+                        <div class="neden-gultekin-desc">Tüm süreçlerde şeffaf iletişim ve güvenilir hizmet anlayışıyla yanınızdayız.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta-section">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h2 class="cta-title fade-in">Hayalinizdeki Proje İçin Hemen İletişime Geçin</h2>
+                    <p class="cta-description fade-in">Uzman ekibimizle size özel çözümler sunmak için buradayız.</p>
+                    <div class="cta-button-wrapper fade-in">
+                        <a href="iletisim.html" class="cta-button primary">
+                            <i class="fas fa-phone"></i>
+                            Ücretsiz Danışmanlık Alın
+                        </a>
+                        <a href="projelerimiz.html" class="cta-button secondary">
+                            <i class="fas fa-building"></i>
+                            Projelerimizi İnceleyin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section">
+            <div class="gallery-container">
+                <div class="section-header">
+                    <p class="section-subtitle fade-in">Galeri</p>
+                    <h2 class="section-title fade-in oswald">Ofisimizden Kareler</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openHomeLightbox(0)">
+                        <img src="front/images/images (1).jpg" alt="Galeri 1" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(1)">
+                        <img src="front/images/images (2).jpg" alt="Galeri 2" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(2)">
+                        <img src="front/images/images (3).jpg" alt="Galeri 3" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(3)">
+                        <img src="front/images/images (4).jpg" alt="Galeri 4" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(4)">
+                        <img src="front/images/images (5).jpg" alt="Galeri 5" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(5)">
+                        <img src="front/images/images (6).jpg" alt="Galeri 6" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(6)">
+                        <img src="front/images/images (7).jpg" alt="Galeri 7" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(7)">
+                        <img src="front/images/images (8).jpg" alt="Galeri 8" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(8)">
+                        <img src="front/images/images (9).jpg" alt="Galeri 9" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(9)">
+                        <img src="front/images/images (10).jpg" alt="Galeri 10" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(10)">
+                        <img src="front/images/images (11).jpg" alt="Galeri 11" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(11)">
+                        <img src="front/images/images (12).jpg" alt="Galeri 12" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(12)">
+                        <img src="front/images/images (13).jpg" alt="Galeri 13" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(13)">
+                        <img src="front/images/images (14).jpg" alt="Galeri 14" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openHomeLightbox(14)">
+                        <img src="front/images/images (15).jpg" alt="Galeri 15" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+    <footer class="luxury-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-brand nevac">Gültekin Yapı İnşaat</h3>
+                    <p class="footer-description">
+                        Yüksek kalitede inşaat hizmetleri sunan, güvenilir ve deneyimli yapı firması. 
+                        Hayalinizdeki yaşam alanlarını gerçeğe dönüştürüyoruz.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/gultekingrupinsaat13?igsh=MXdudnRzZjhvbmZpMg==" class="social-link" data-tooltip="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title nevac">Hızlı Erişim</h4>
+                    <ul class="footer-links">
+                        <li><a href="./">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="projelerimiz.html">Projelerimiz</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title nevac">İletişim</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Beşminare Mah. 1320 Sk. Gül-Bal İş Merkezi Kapı No:13 Bitlis
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+905070097790">+90 (507) 009 77 90</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:gultekingrupyapi@gmail.com">gultekingrupyapi@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            Pzt-Cum 08:00 - 18:00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gültekin Yapı İnşaat. Tüm hakları saklıdır.</p>
+                <div class="footer-legal">
+                    <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>
+                    <a href="cerez-politikasi.html">Çerez Politikası</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="homeLightboxModal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeHomeLightbox()">&times;</span>
+            <div class="lightbox-nav lightbox-prev" onclick="changeHomeImage(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="lightbox-nav lightbox-next" onclick="changeHomeImage(1)">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <img id="homeLightboxImage" class="lightbox-image" src="front/static-images/front_pictures (1).jpg" alt="Galeri Görseli">
+            <div class="lightbox-counter">
+                <span id="homeCurrentImageIndex">1</span> / <span id="homeTotalImages">3</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</body>
+</html> 

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>İletişim - Gültekin Yapı İnşaat</title>
+    <meta name="description" content="Gültekin Yapı İnşaat ile iletişime geçin. Proje danışmanlığı ve detaylı bilgi için bizimle iletişime geçin.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/serious.css">
+    <link rel="stylesheet" href="css/common-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <div class="page-loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #1a1a1a; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: opacity 0.5s;">
+        <div style="width: 50px; height: 50px; border: 3px solid white; border-top: 3px solid transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+    </div>
+    <nav class="luxury-navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="./">Gültekin Yapı İnşaat</a>
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Menüyü Aç/Kapat">
+                <span>☰</span>
+            </button>
+            <div class="navbar-menu" id="navbarMenu">
+                <a class="nav-link" href="./">Anasayfa</a>
+                <a class="nav-link" href="projelerimiz.html">Projelerimiz</a>
+                <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                <a class="nav-link" href="iletisim.html">İletişim</a>
+            </div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <p class="contact-hero-subtitle fade-in">İletişim</p>
+                <h1 class="contact-hero-title fade-in oswald">Bizimle İletişime Geçin</h1>
+                <p class="contact-hero-description fade-in">
+                    Projeleriniz hakkında detaylı bilgi almak ve ücretsiz danışmanlık hizmeti için 
+                    bizimle iletişime geçin. Uzman ekibimiz size yardımcı olmaktan mutluluk duyacaktır.
+                </p>
+                <div class="hero-cta fade-in">
+                    <a href="#contact" class="btn-luxury">
+                        <i class="fas fa-phone"></i>
+                        Hemen Ara
+                    </a>
+                    <a href="projelerimiz.html" class="btn-outline-luxury">
+                        <i class="fas fa-building"></i>
+                        Projelerimizi İncele
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="luxury-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <p class="section-subtitle fade-in">İletişim Bilgileri</p>
+                    <h2 class="section-title fade-in oswald">Bize Ulaşın</h2>
+                </div>
+                <div class="contact-cards">
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="contact-title">Telefon</h3>
+                        <p class="contact-info">
+                            <a href="tel:+905070097790">+90 (507) 009 77 90</a>
+                        </p>
+                        <p class="contact-desc">Hafta içi 08:00 - 18:00 arası</p>
+                    </div>
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="contact-title">E-posta</h3>
+                        <p class="contact-info">
+                            <a href="mailto:gultekingrupyapi@gmail.com">gultekingrupyapi@gmail.com</a>
+                        </p>
+                        <p class="contact-desc">24 saat içinde yanıt alırsınız</p>
+                    </div>
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="contact-title">Adres</h3>
+                        <p class="contact-info">
+                            Beşminare Mah. 1320 Sk. Gül-Bal İş Merkezi Kapı No:13 Bitlis
+                        </p>
+                        <p class="contact-desc">Merkezi konumda, kolay ulaşım</p>
+                    </div>
+                </div>
+                <div class="working-hours-card fade-in">
+                    <div class="working-hours-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="working-hours-title">Çalışma Saatlerimiz</h3>
+                    <p class="working-hours-info">Pazartesi - Cuma: 08:00 - 18:00</p>
+                    <p class="working-hours-desc">Hafta sonu ve resmi tatillerde kapalıyız</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Google Haritalar Bölümü -->
+        <section class="map-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <p class="section-subtitle fade-in">Konum</p>
+                    <h2 class="section-title fade-in oswald">Bizi Ziyaret Edin</h2>
+                </div>
+                <div class="map-container fade-in">
+                    <iframe 
+                        src="https://www.google.com/maps?q=Beşminare+Mah.+1320+Sk.+Gül-Bal+İş+Merkezi+Kapı+No:13+Bitlis&output=embed"
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="map-info fade-in">
+                    <div class="map-info-card">
+                        <div class="map-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="map-info-content">
+                            <h3>Adres</h3>
+                            <p>Beşminare Mah. 1320 Sk. Gül-Bal İş Merkezi Kapı No:13 Bitlis</p>
+                        </div>
+                    </div>
+                    <div class="map-info-card">
+                        <div class="map-info-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="map-info-content">
+                            <h3>Ulaşım</h3>
+                            <p>Şehir merkezinde, ana caddelerden kolay ulaşım</p>
+                        </div>
+                    </div>
+                    <div class="map-info-card">
+                        <div class="map-info-icon">
+                            <i class="fas fa-parking"></i>
+                        </div>
+                        <div class="map-info-content">
+                            <h3>Otopark</h3>
+                            <p>İş merkezi önünde ücretsiz otopark mevcuttur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="enhanced-cta-section">
+            <div class="section-container">
+                <div class="enhanced-cta-content">
+                    <h2 class="enhanced-cta-title fade-in">Projeleriniz İçin Ücretsiz Danışmanlık</h2>
+                    <p class="enhanced-cta-description fade-in">Uzman ekibimizle projelerinizi değerlendirelim ve size özel çözümler sunalım.</p>
+                    <div class="enhanced-cta-buttons fade-in">
+                        <a href="tel:+905070097790" class="enhanced-cta-btn primary">
+                            <i class="fas fa-phone"></i>
+                            Hemen Ara
+                        </a>
+                        <a href="mailto:gultekingrupyapi@gmail.com" class="enhanced-cta-btn secondary">
+                            <i class="fas fa-envelope"></i>
+                            E-posta Gönder
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="luxury-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-brand">Gültekin Yapı İnşaat</h3>
+                    <p class="footer-description">
+                        Yüksek kalitede inşaat hizmetleri sunan, güvenilir ve deneyimli yapı firması. 
+                        Hayalinizdeki yaşam alanlarını gerçeğe dönüştürüyoruz.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/gultekingrupinsaat13?igsh=MXdudnRzZjhvbmZpMg==" class="social-link" data-tooltip="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Hızlı Erişim</h4>
+                    <ul class="footer-links">
+                        <li><a href="./">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="projelerimiz.html">Projelerimiz</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">İletişim</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Beşminare Mah. 1320 Sk. Gül-Bal İş Merkezi Kapı No:13 Bitlis
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+905070097790">+90 (507) 009 77 90</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:gultekingrupyapi@gmail.com">gultekingrupyapi@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            Pzt-Cum 08:00 - 18:00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gültekin Yapı İnşaat. Tüm hakları saklıdır.</p>
+                <div class="footer-legal">
+                    <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>
+                    <a href="cerez-politikasi.html">Çerez Politikası</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
